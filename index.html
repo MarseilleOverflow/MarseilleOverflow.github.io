@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mon Poème et Musique</title>
+    <title>Votre Poème</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            font-size: 12px;
-            background-color: #ffffff;
-            color: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        #poem {
-            white-space: pre-line;  /* Cette propriété CSS préserve les sauts de ligne dans le texte */
-            text-align: left;
+            font-family: Arial;
+            font-size: 12px;
+            background-color: white;
+            color: black;
             line-height: 1.5;
+            text-align: left;
+        }
+
+        .poem-container {
+            width: 50%;
+        }
+
+        audio {
+            display: block;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="poem">
-        Laisse moi délirer
-        Je sens les radieuses promesses 
-        De toutes les plages 
-        Sur lesquelles je nous vois danser 
+    <div class="poem-container">
+        <p>Laisse moi délirer<br>
+        Je sens les radieuses promesses<br>
+        De toutes les plages<br>
+        Sur lesquelles je nous vois danser</p>
 
-        J’ai craqué sur toi 
-        Mon esprit s’est effondré 
-        Certains voient la vierge 
-        D’autres le diable 
-        Moi je t’ai rencontré
+        <p>J’ai craqué sur toi<br>
+        Mon esprit s’est effondré<br>
+        Certains voient la vierge<br>
+        D’autres le diable<br>
+        Moi je t’ai rencontré</p>
 
-        Depuis mon sang a changé 
-        Il circule au rythme 
-        Des remous respiratoires 
-        De ta poitrine                
+        <p>Depuis mon sang a changé<br>
+        Il circule au rythme<br>
+        Des remous respiratoires<br>
+        De ta poitrine</p>
 
-        Eclairé par tes lèvres
-        Je fond 
-        Dans l’odeur de ta peau 
-        Je me baigne
+        <p>A la lumière de tes lèvres<br>
+        Je fond<br>
+        Dans l’odeur de ta peau<br>
+        Je me baigne</p>
 
-        Je voyage
-        Dans tes yeux d’été 
-        Aux couleurs du soir
+        <p>Je voyage<br>
+        Dans tes yeux d’été<br>
+        Aux couleurs du soir</p>
 
-        Bouge, remue 
-        Tout ce que tu fais 
-        Me met en joie 
-        Même quand tu es méchante 
+        <p>Bouge, remue<br>
+        Tout ce que tu fais<br>
+        Me met en joie<br>
+        Même quand tu es méchante</p>
 
-        Je sens le contact avec toi 
-        Plus précieux que tout 
-        Que ce silence 
-        Qui m’avale 
-        Loin de toi
+        <p>Je sens le contact avec toi<br>
+        Plus précieux que tout<br>
+        Que ce silence<br>
+        Qui m’avale<br>
+        Loin de toi</p>
 
-        Mais tu ne m’aimes pas
-        Je crois 
-        Je ne te suis rien 
-        Au fond 
-        Qu’un pauvre 
-        Que tu ne regarderas pas
+        <p>Mais tu ne m’aimes pas<br>
+        Je crois<br>
+        Je ne te suis rien<br>
+        Au fond<br>
+        Qu’un pauvre<br>
+        Que tu ne regardes pas</p>
+
+        <audio controls autoplay>
+            <source src="Bakhta.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    <audio controls autoplay hidden>
-        <source src="Bakhta.mp3" type="audio/mpeg">
-    </audio>
 </body>
 </html>
